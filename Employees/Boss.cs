@@ -9,5 +9,10 @@ public class Boss : IEmployee
     public int Age { get; set; }
     public decimal Salary { get; set; } = 60000;
     public EmployeeFactory.Roles Role { get; set; } = EmployeeFactory.Roles.Boss;
+
+    public int CompareTo(IEmployee? other)
+    {
+        return this.Salary.CompareTo(other?.Salary);
+    }
 }
 

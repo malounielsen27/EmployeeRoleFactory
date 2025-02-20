@@ -9,4 +9,9 @@ public class Developer : IEmployee
     public int Age { get; set; }
     public decimal Salary { get; set; } = 45000;
     public EmployeeFactory.Roles Role { get; set; } = EmployeeFactory.Roles.Developer;
+
+    public int CompareTo(IEmployee? other)
+    {
+        return this.Salary.CompareTo(other?.Salary);
+    }
 }

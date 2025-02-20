@@ -3,7 +3,7 @@ using static EmployeeAdministration.Employees.EmployeeFactory;
 
 namespace EmployeeAdministration.Employees;
 
-public interface IEmployee
+public interface IEmployee : IComparable<IEmployee>
 {
     string FirstName { get; set; }
     string LastName { get; set; }
