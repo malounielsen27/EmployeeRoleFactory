@@ -1,0 +1,12 @@
+# .NET build folders
+bin/
+obj/
+
+# User-specific files
+.vscode/
+
+# User-specific files for Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
